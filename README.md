@@ -1,34 +1,34 @@
-Chess là một trò chơi bàn phương thế giới có nguồn gốc từ Ấn Độ cổ đại và trở thành một trong những trò chơi bàn phương phổ biến nhất trên toàn thế giới. Nó thuộc thể loại trò chơi chiến lược, yêu cầu người chơi có khả năng tư duy chiến thuật, lập kế hoạch và sự sáng tạo.
+# Online Multiplayer Chess
+Description: An online multiplayer chess game. Supports infinite players playing against random opponents on different machines on different networks. This project was created using python 3.7, pygame and the sockets module from python3. It runs on a basic client server system where a server script handles all incoming connections and game management. The clients simply hanlde the UI and game play.
 
-Trò chơi Chess diễn ra trên một bàn cờ vuông gồm 64 ô, được chia thành 32 ô màu trắng và 32 ô màu đen. Mỗi người chơi điều khiển một bộ quân cờ gồm các quân cờ vua, hậu, xe, tượng, mã và tốt. Mục tiêu của trò chơi là bắt hoặc chiếm đóng quân vua của đối thủ, được gọi là "chiếu hết" (checkmate).
 
-Mỗi quân cờ di chuyển theo các quy tắc cụ thể. Ví dụ, vua có thể di chuyển một ô theo bất kỳ hướng nào, xe di chuyển theo hàng ngang hoặc cột dọc, tượng di chuyển theo đường chéo, mã di chuyển theo đường L và tốt di chuyển về phía trước một ô. Quân hậu là quân mạnh nhất và có thể di chuyển theo bất kỳ hướng nào trên bàn cờ.
+# Required:
+- Python 3.x
+- pygame
 
-Trò chơi Chess yêu cầu người chơi có khả năng định hình chiến thuật, dự đoán và phản ứng nhanh. Nó kết hợp sự phân tích chi tiết và tính toán xa trước để đưa ra những nước đi tốt nhất. Các trận đấu Chess có thể diễn ra giữa hai người chơi hoặc giữa người chơi và máy tính.
-Để tối ưu hóa trò chơi và làm cho cách chơi trở nên dễ dàng hơn, phù hợp với mọi độ tuổi và thiết bị, nhóm em đã làm cho trò chơi với cách chơi đơn giản hơn. Điều này giúp người chơi dễ dàng tương tác với trò chơi một cách tự nhiên và thuận tiện, mang lại trải nghiệm chơi game tốt hơn và thú vị hơn.
 
-Web Demo: https://tutaiop.github.io/web_intro_chess/instruction.html
+# TO MAKE THIS CODE WORK...
+You will need to change the server address from within the following two files:
+- client.py
+- server.py
 
-Tài liệu & source LATEX: 
+You will also need to run server.py on some kind of server. After that you can launch two instances of game from anywhere to play online chess.
 
-https://github.com/tutaiOP/LateX
 
-Install instruction & extension for VSCode:
+# Known Bugs:
+- Checkmate does not work, if you loose or win you will need to end the game by hitting "q"
+- Very rare bug where a certain move will crash the game
+- No Enpesant Pawn Rule
 
-dowload VSCode: https://code.visualstudio.com/download
 
-dowload python: https://www.python.org/ftp/python/3.12.2/python-3.12.2-amd64.exe
+# LICENSE:
+*NOT FOR COMMERCIAL USE*
+If you intened to use any of my code for commercial use please contact me and get my permission. If you intend to make money using any of my code please ask my permission.
 
-Install pip in terminal for VSCode:
---------------------
-pip install pygame
+# Run in Gitpod
 
---------------------
-Extension for VSCode:
---------------------
-pygame
-python
+You can also run Online Chess Game in Gitpod, a free online dev environment for GitHub:
 
----------------------
+If you're intersted in a paid subscription with GitPod use the coupon code: **TECHWITHTIM19**
 
-*********************************************************************************************************
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Online-Chess-Game/blob/master/client.py)
