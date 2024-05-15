@@ -22,10 +22,9 @@ dowload python: https://www.python.org/ftp/python/3.12.2/python-3.12.2-amd64.exe
 Install pip in terminal for VSCode:
 --------------------
 pip install pygame
+
 --------------------
-
 Extension for VSCode:
-
 --------------------
 pygame
 python
